@@ -1,7 +1,7 @@
 package zmq4
 
 /*
-#cgo !windows pkg-config: libzmq
+#cgo darwin LDFLAGS: /usr/local/lib/libzmq.a /usr/local/lib/libsodium.a -lstdc++
 #cgo windows CFLAGS: -I/usr/local/include
 #cgo windows LDFLAGS: -L/usr/local/lib -lzmq
 #include <zmq.h>
